@@ -43,7 +43,7 @@ function main() {
 }
 ```
 
-Let’s pretend we’re getting some crypto amounts from a contract as `bigint`
+Let’s pretend we’re getting some crypto amounts from a contract as `bigint` values
 
 ```tsx
 function getBalancesFromContract() {
@@ -81,7 +81,7 @@ console.log(`BTC balance: ${btcBalance.toString()}`);
 console.log(`USD balance: ${usdAmount.toString()}`);
 ```
 
-```jsx
+```bash
 ETH balance: 1.123456789000000123
 BTC balance: 12.34567890
 USD balance: 450000.29
@@ -100,7 +100,7 @@ console.log(`ETH balance bigint: ${ethBalanceBigInt}`);
 console.log(`ETH balance formatted decimal: ${ethBalanceFormattedDecimal}`);
 ```
 
-```jsx
+```bash
 ETH balance number: 1.123456789
 ETH balance bigint: 1123456789000000123
 ETH balance formatted decimal: 1.1235
@@ -121,7 +121,7 @@ const totalPortfolioValue = ethDollarValue.add(btcDollarValue).add(usdAmount);
 console.log(`Total value: $${totalPortfolioValue.toNumber().toLocaleString()}`);    
 ```
 
-```jsx
+```bash
 Total value: $1,501,967.44
 ```
 
@@ -139,7 +139,7 @@ const ethBalanceFromDb = BigUnit.fromObject(ethBalanceDb);
 console.log(`ETH balance from DB: ${ethBalanceFromDb.toString()}`);
 ```
 
-```jsx
+```bash
 Saving my ethBalance to DB
 {
   "value": "1123456789000000123",
@@ -164,7 +164,7 @@ const ethBalanceFromDto = BigUnit.fromObject(ethBalanceDto);
 console.log(ethBalanceFromDto.toString());
 ```
 
-```jsx
+```bash
 Sending my ethBalance as JSON
 {
   "value": "1123456789000000123",
